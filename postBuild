@@ -1,5 +1,6 @@
 #!/bin/bash
 
+conda init bash
 conda activate stream_nwb
 set HDF5_DIR=/home/main/anaconda3/envs/stream_nwb/
 
