@@ -4,7 +4,7 @@ conda init bash
 conda activate stream_nwb
 set HDF5_DIR=/home/main/anaconda3/envs/stream_nwb/
 
-pip install nwbwidgets
-pip install git+https://github.com/NeurodataWithoutBorders/pynwb
-pip install git+https://github.com/hdmf-dev/hdmf
 pip install git+https://github.com/h5py/h5py
+pip install git+https://github.com/hdmf-dev/hdmf
+pip install git+https://github.com/NeurodataWithoutBorders/pynwb
+pip install nwbwidgets
