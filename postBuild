@@ -1,10 +1,16 @@
 #!/bin/bash
 
-conda install --channel=conda-forge python=3.7 pip hdf5=1.12.0 notebook
+conda install --channel=conda-forge python=3.7 pip hdf5=1.12.0 notebook voila
 export HDF5_DIR=/srv/conda/envs/notebook
 echo $HDF5_DIR
 
 pip install git+https://github.com/hdmf-dev/hdmf
 pip install git+https://github.com/NeurodataWithoutBorders/pynwb
 pip install nwbwidgets
-pip install h5py==3.2.1
+pip install jupyter_contrib_nbextensions
+
+pip install git+https://github.com/h5py/h5py
+pip install --force-reinstall --no-binary=h5py
+
+jupyter contrib nbextension install --user
+jupyter nbextension enable --py widgetsnbextension
