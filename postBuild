@@ -1,8 +1,7 @@
 #!/bin/bash
 
-conda init bash
-conda activate stream_nwb
-set HDF5_DIR=/home/main/anaconda3/envs/stream_nwb/
+conda install --channel=conda-forge python=3.7 pip notebook
+set HDF5_DIR=/srv/conda/envs/notebook
 
 pip install git+https://github.com/h5py/h5py
 pip install git+https://github.com/hdmf-dev/hdmf
